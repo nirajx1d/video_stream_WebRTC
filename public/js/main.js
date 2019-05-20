@@ -11,8 +11,8 @@ function stream(form) {
 	streamName = form.streamname.value || Math.floor(Math.random()*100)+'';
 	var phone = window.phone = PHONE({
 	    number        : streamName, // listen on username line else random
-	    publish_key   : 'pub-c-561a7378-fa06-4c50-a331-5c0056d0163c',
-	    subscribe_key : 'sub-c-17b7db8a-3915-11e4-9868-02ee2ddab7fe',
+	    publish_key   : '<YOUR_PUBLISH_KEY>',
+	    subscribe_key : '<YOUR_SUBSCRIBE_KEY>',
 	    oneway        : true,
 	    broadcast     : true
 	});
